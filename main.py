@@ -1,5 +1,6 @@
 from src.load_data import load_all_data
 from src.clean_data import clean_data
+from src.eda import run_eda
 
 
 def main():
@@ -8,9 +9,9 @@ def main():
 
     df = clean_data(data)
 
-    print(df.head())
+    run_eda(df)
 
-    print(f"\nFinal Dataset Shape : {df.shape}")
+    print("\nPipeline completed successfully.")
 
 
 if __name__ == "__main__":
