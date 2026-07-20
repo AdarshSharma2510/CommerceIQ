@@ -69,3 +69,8 @@ EDA_IMAGE_DIR.mkdir(parents=True, exist_ok=True)
 
 MODELS_DIR.mkdir(parents=True, exist_ok=True)
 PROCESSED_DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+
+ML_IMAGE_DIR = IMAGES_DIR / "ml"
+
+ML_IMAGE_DIR.mkdir(parents=True, exist_ok=True)

@@ -1,6 +1,7 @@
 from src.load_data import load_all_data
 from src.clean_data import clean_data
 from src.eda import run_eda
+from src.ml import run_ml
 
 
 def main():
@@ -11,7 +12,9 @@ def main():
 
     run_eda(df)
 
-    print("\nPipeline completed successfully.")
+    run_ml()
+
+    print("\nProject executed successfully.")
 
 
 if __name__ == "__main__":
